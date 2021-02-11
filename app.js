@@ -30,7 +30,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) {
-  let output = a * b;
+ let output= a*b;
   return[output,`The product of ${a} and ${b} is ${output}.`]
   //eslint-disable-line
 }
