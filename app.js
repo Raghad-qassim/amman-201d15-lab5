@@ -64,7 +64,6 @@ function sumAndMultiply(a, b, c) {
   
   return[newsum2,multiply2, `${a} and ${b} and ${c} sum to ${newsum2}.`,`The product of ${a} and ${b} and ${c} is ${multiply2}.`];
    
- 
   
   
  }
@@ -100,7 +99,7 @@ function sumArray(sumArr) {
 sumofarray=sum(sumofarray,sumArr[i])[0];
   }
  // console.log(sumofarray);
-  return[sumofarray,`${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${sumofarray} is their sum.`]
+  return[sumofarray,`${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${sumofarray} is their sum.`];
  
   
   
@@ -126,12 +125,22 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
+ //eslint-disable-line
+
 function multiplyArray(multArr) {
-  //eslint-disable-line
+  let multiplyofarray=1;
+  for(let i=0;i<multArr.length;i++){
+    multiplyofarray=multiply(multiplyofarray,multArr[i])[0];
+
 }
 
+
+  
+
+ 
+
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+ //testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
@@ -160,6 +169,7 @@ the testMultiplyAnyArray() function and see if the test passes.*/
 let testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) {
+  
   //eslint-disable-line
 
 }
